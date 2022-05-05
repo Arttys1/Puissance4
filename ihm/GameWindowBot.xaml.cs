@@ -254,7 +254,7 @@ namespace Puissance4Upgrade
             if (win)
             {
                 WinWindow winWindow = new WinWindow(isRouge, this);
-                winWindow.Show();
+                winWindow.ShowDialog();
             }
         }
     }
