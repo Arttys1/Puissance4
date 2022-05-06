@@ -1,4 +1,5 @@
-﻿using Puissance4Upgrade.stockage;
+﻿using Puissance4Upgrade.metier.IA;
+using Puissance4Upgrade.stockage;
 using System.Windows;
 
 namespace Puissance4Upgrade
@@ -15,6 +16,11 @@ namespace Puissance4Upgrade
         public MainWindow()
         {
             InitializeComponent();
+            Tree tree = new Tree();
+            tree.Build(2);
+            int count = tree.Count();
+            tree.Notation(Etat.ROUGE);
+            int note = tree.Value;
         }
 
         /// <summary>
